@@ -1,5 +1,5 @@
 {
-  "name": "typescript-proyect",
+  "name": "soccer-team-creator",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -15,6 +15,7 @@
     "@angular/common": "~11.2.13",
     "@angular/compiler": "~11.2.13",
     "@angular/core": "~11.2.13",
+    "@angular/fire": "^6.1.4",
     "@angular/forms": "~11.2.13",
     "@angular/platform-browser": "~11.2.13",
     "@angular/platform-browser-dynamic": "~11.2.13",

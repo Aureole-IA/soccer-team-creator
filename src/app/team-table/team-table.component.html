@@ -1,0 +1,23 @@
+<section class="container">
+    <h1>My team</h1>
+    <div class="tbl_header">
+        <table>
+            <thead>
+                <tr>
+                    <th *ngFor="let header of tableHeaders" >{{header}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let team of (teams$ | async)"> 
+                    <th>{{team.name}}</th>
+                    <th>{{team.country}}</th>
+                    <th>
+                        <p *ngFor="let player of team.players">
+                            {{player.name}}
+                        </p>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

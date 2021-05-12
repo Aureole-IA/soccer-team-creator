@@ -1,0 +1,40 @@
+<section class="container">
+    <div class="row">
+        <div class="col s12 ">
+            <h5 class="center-align">Players</h5>
+        </div>
+        <div class="col s12">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Position</th>
+                        <th>Weight</th>
+                        <th>Height</th>
+                        <th>Nationality</th>
+                        <th>Left Footed</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let player of (players$ | async)">
+                        <th>{{player.name}}</th>
+                        <th>{{player.lastName}}</th>
+                        <th>{{player.position}}</th>
+                        <th>{{player.weight}}</th>
+                        <th>{{player.height}}</th>
+                        <th>{{player.nationality}}</th>
+                        <th>{{player.leftFooted}}</th>
+                        <th>
+                            <button class="waves-effect waves-light btn-large">Button</button>
+                            <button class="waves-effect waves-light btn-large">Button</button>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+</section>
